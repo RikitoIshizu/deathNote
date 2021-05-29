@@ -1,0 +1,33 @@
+.container {
+  @include container;
+  padding: 70px 15px 0;
+  
+  &Title {
+    text-align: center;
+  }
+
+  .deadPersonList {
+    list-style: none;
+    
+
+    &Detail {
+      padding: 10px;
+      border-bottom: 1px solid $white;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      // .killPersonName {
+
+      // }
+
+      // .{}
+    }
+  }
+
+  .buttonArea {
+    margin-top: 20px;
+  }
+}

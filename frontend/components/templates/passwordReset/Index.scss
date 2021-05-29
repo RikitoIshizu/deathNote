@@ -1,0 +1,23 @@
+.container {
+  @include container;
+
+  .inputArea {
+  	margin-top: 20px;
+        
+    .registerArea {
+      &InputItem {
+        margin: 15px 0;
+      
+        &Label {
+          color: $white;
+          margin-right: 15px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .error {
+    @include error;
+  }
+}

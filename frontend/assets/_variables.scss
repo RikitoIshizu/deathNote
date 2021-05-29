@@ -1,0 +1,26 @@
+@mixin container {
+  padding: 70px 15px 0;
+  min-height: 100vh;
+}
+
+// 入力系のエラー
+@mixin error {
+  &Message {
+    color: $red;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  &Detail {
+    color: $red;
+    margin-left: 10px;
+    font-weight: bold;
+  } 
+}
+
+// 色
+$white: #fff;
+$red: #F06060;
+$black: #000;

@@ -1,0 +1,40 @@
+.container {
+    @include container;
+
+    .button {
+      &Area {
+        margin-top: 20px;
+      }
+
+      &Style {
+        display: block;
+        margin: 0 auto 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+    
+  
+    // .inputArea {
+    //     margin-top: 20px;
+          
+    //   .registerArea {
+    //     &InputItem {
+    //       margin: 15px 0;
+        
+    //       &Label {
+    //         color: $white;
+    //         margin-right: 15px;
+    //         display: block;
+    //       }
+    //     }
+    //   }
+    // }
+  
+    // .error {
+    //   @include error;
+    // }
+  }

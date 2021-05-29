@@ -1,0 +1,37 @@
+.container {
+  @include container;
+  padding: 70px 15px 0;
+
+  &Title {
+    text-align: center;
+  }
+
+  .registerArea {
+    &InputItem {
+      margin: 15px 0;
+    
+      &Label {
+        color: $white;
+        margin-right: 15px;
+        display: block;
+      }
+    }
+  }
+
+  .error {
+    @include error;
+  }
+}
+
+.inputStyle {
+  width: 200px;
+}
+
+.buttonPosition {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.backButton {
+  margin-right: 15px;
+}

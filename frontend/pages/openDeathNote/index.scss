@@ -1,0 +1,50 @@
+.container {
+  @include container;
+  
+  .title {
+    text-align: center;
+  }
+  
+  .loginArea {
+    margin: 0 20px;
+  
+    &InputItem {
+      margin: 15px 0;
+
+      &Label {
+        margin-right: 15px;
+        display: block;
+      }
+    }
+  }
+
+  .buttonStyle {
+    display: block;
+    width: 200px;
+    margin: 0 auto 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .registerArea {
+    &InputItem {
+      margin: 15px 0;
+    
+      &Label {
+        color: $white;
+        margin-right: 15px;
+        display: block;
+      }
+    }
+  }
+
+  .submitButtonArea {
+    margin-top: 20px;
+  }
+
+  .error {
+    @include error;
+  }
+}
