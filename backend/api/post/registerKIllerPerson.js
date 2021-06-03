@@ -10,9 +10,11 @@ const errorParameter = require('../../mixin/errorParameter.js');
 module.exports = app.post('/registerKillerPerson',
     registerKillerData,
     (req, res) => {
-      const { sendParameter } = errorParameter;
+			const { sendParameter } = errorParameter;
+			console.log(req.body);
 
-      const errors = validationResult(req);
+			const errors = validationResult(req);
+			console.log(errors);
         
       if(!errors.isEmpty()) {
 				errors.array().map(el => {

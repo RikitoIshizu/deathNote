@@ -9,7 +9,7 @@
 				<div>No.{{ index }}</div>
         <div :class="$style.killPersonName">死亡者の名前:&nbsp;{{ item.killPersonName }}</div>
         <div :class="$style.causeOfDeath">死因:&nbsp;{{ item.causeOfDeath }}</div>
-				<div :class="$style.detail">詳細:&nbsp;{{ item.detail === '' ? 'なし' : detail }}</div>
+				<div :class="$style.detail">詳細:&nbsp;{{ item.detail === '' ? 'なし' : item.detail }}</div>
         <div :class="$style.killerName">デスノートに名前を書いた人:&nbsp;{{ item.killerName }}</div>
       </li>
     </ul>

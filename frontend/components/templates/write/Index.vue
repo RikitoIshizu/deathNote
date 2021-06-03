@@ -67,7 +67,7 @@ export default {
         return el;
       });
 
-      if(errors.length >= 0) errors.length = 0;
+      if(errors.length >= 0) $set(this, 'errors', []);
 
       $store.dispatch('changeIsLoading', true);
       this.$axios.post('/api/registerKillerPerson', parameter).then(response => {
@@ -85,7 +85,6 @@ export default {
   
     // 詳細を変更する
     changeDetail({ target }) {
-      console.log(this);
       this.$set(this, 'detail', target.value);
     }
 	}

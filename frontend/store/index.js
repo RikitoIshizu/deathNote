@@ -1,4 +1,4 @@
-import Vue from 'Vue';
+import vue from 'vue';
 
 export const state = () => ({
 	isLoading: false,
@@ -7,11 +7,11 @@ export const state = () => ({
 
 export const mutations = {
 	CHANGE_ISLOADING: (state, payload) => {
-		Vue.set(state, 'isLoading', payload);
+		vue.set(state, 'isLoading', payload);
 	},
 
 	SET_LOGIN: (state, payload) => {
-		Vue.set(state, 'isLogin', payload);
+		vue.set(state, 'isLogin', payload);
 	}
 };
 
