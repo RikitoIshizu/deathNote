@@ -62,7 +62,7 @@ export default {
     //  キラの情報を変更する
     async editKilaData() {
       const parameter = {};
-      this.inputData.map(el => {
+      this.inputData.map((el) => {
         parameter[`${el.name}`] = el.value;
         return el;
       });
@@ -70,7 +70,7 @@ export default {
       parameter.id = this.kilaData.id;
 
       this.$store.dispatch('changeIsLoading', true);
-      await this.$axios.post('api/editKilaData', parameter).then(response => {
+      await this.$axios.post('api/editKilaData', parameter).then((response) => {
         const { isError } = response.data;
         
         if(!isError) this.$router.push('/complete/edit');
@@ -86,7 +86,7 @@ export default {
       const { id } = this.kilaData;
 
       this.$store.dispatch('changeIsLoading', true);
-      await this.$axios.post('api/deleteKilaData', { id }).then(response => {
+      await this.$axios.post('api/deleteKilaData', { id }).then((response) => {
         this.$store.dispatch('changeIsLoading', false);
         this.$router.push('complete/delete');
       })

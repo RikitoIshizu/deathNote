@@ -62,7 +62,7 @@ export default {
       if(!window.confirm('本当にいいのですね？後戻りはできませんよ？')) return;
       const { detail, errors, $set, $store } = this;
       const parameter = { detail };
-      this.inputData.map(el => {
+      this.inputData.map((el) => {
         parameter[`${el.name}`] = el.value;
         return el;
       });
@@ -70,7 +70,7 @@ export default {
       if(errors.length >= 0) $set(this, 'errors', []);
 
       $store.dispatch('changeIsLoading', true);
-      this.$axios.post('/api/registerKillerPerson', parameter).then(response => {
+      this.$axios.post('/api/registerKillerPerson', parameter).then((response) => {
         $store.dispatch('changeIsLoading', false);
         const { errorList, isError, message } = response.data;
 

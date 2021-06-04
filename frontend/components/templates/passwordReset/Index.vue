@@ -51,7 +51,7 @@ export default {
 		async resetPassword() {
 			const { $set, $store } = this;
 			const parameter = {};
-      this.inputData.map(el => {
+      this.inputData.map((el) => {
         parameter[`${el.name}`] = el.value;
         return el;
       });
@@ -59,7 +59,7 @@ export default {
       if(this.errors.length >= 0) this.errors.length = 0;
 
 			$store.dispatch('changeIsLoading', true);
-			await this.$axios.post('/api/resetPassword', parameter).then(response => {
+			await this.$axios.post('/api/resetPassword', parameter).then((response) => {
 				$store.dispatch('changeIsLoading', false);
 
 				const { errorList, isError, message } = response.data;

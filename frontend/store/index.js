@@ -21,7 +21,7 @@ export const actions = {
 	},
 
 	async isLoginCheck({ commit }) {
-		await this.$axios.get('/api/checkLogin').then(response => {
+		await this.$axios.get('/api/checkLogin').then((response) => {
 			commit('SET_LOGIN', response.data.isLogin);
 		});
 	},

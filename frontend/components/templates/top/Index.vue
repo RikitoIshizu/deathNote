@@ -26,7 +26,7 @@ export default {
 		// ログアウト
     async logout() {
       this.$store.dispatch('changeIsLoading', true);
-      this.$axios.post('/api/logout').then(response => {
+      this.$axios.post('/api/logout').then((response) => {
         if(response.data.logout) this.$router.push('/openDeathNote');
         this.$store.dispatch('changeIsLoading', false);
       });

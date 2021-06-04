@@ -49,14 +49,14 @@ export default {
     async login() {
       const { $set, $store } = this;
 			const parameter = {};
-      this.inputData.map(el => {
+      this.inputData.map((el) => {
         parameter[`${el.name}`] = el.value;
         return el;
       });
 
       this.$set(this, 'errors', []);
       $store.dispatch('changeIsLoading', true);
-      await this.$axios.post('/api/login', parameter).then(response => {
+      await this.$axios.post('/api/login', parameter).then((response) => {
         const { errorList, isError, message } = response.data;
 
 				if(isError) {

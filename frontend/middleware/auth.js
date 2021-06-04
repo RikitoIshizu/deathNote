@@ -5,7 +5,7 @@ export default async ({ route, $axios, redirect, }) => {
         const loginCheck = await $axios.get('/api/checkLogin');
         const { isLogin } = loginCheck.data;
 
-        if(!isLogin) await $axios.post('/api/logout').then(response => {
+        if(!isLogin) await $axios.post('/api/logout').then((response) => {
             if(response.data.logout) redirect('/openDeathNote');
         });
     }

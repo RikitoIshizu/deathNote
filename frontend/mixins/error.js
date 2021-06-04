@@ -8,8 +8,8 @@ export default {
   },
   computed: {
   	getErrorMessage() {
-      return errorName => {
-        const errorMessage = this.errors.filter(el => el.param === errorName);
+      return (errorName) => {
+        const errorMessage = this.errors.filter((el) => el.param === errorName);
         return errorMessage.length ? errorMessage[0].msg : '';
       }
     }
