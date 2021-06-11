@@ -26,4 +26,4 @@ http://localhost:3000/openDeathNote
 ・入力のところで値を入力しているのに、validatorが作動してしまう。<br/>
 ・今回はNuxtとExpressで開発を行う場合の練習で、流れや仕組みを知るというのが目的でフロント面は作り込んでいないので、フロント周りのデザインを作り込みたい。その際にはVuetifyなどのフレームワークを使用したい。<br/>
 ・テストコードが入っていないのでキャッチアップした後に導入予定。<br/>
-・Dockerで動くようにdocker-compose.ymlとDockerfileでコンテナにまとめて動くようにしたい。
+・フロントとバックでそれぞれ、サーバーを起動させるのが面倒なので、Dockerで動くようにdocker-compose.ymlとDockerfileを作成し、コンテナにまとめて動くようにしたい。
