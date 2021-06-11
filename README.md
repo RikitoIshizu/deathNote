@@ -1,3 +1,8 @@
+#バージョン等
+・node@12.2.0
+.nuxt@2.15.4
+。express@4.17.1
+
 # deathNote
 ## フロントエンド側サーバー起動方法
 frontendディレクトリで「yarn dev」を叩く
