@@ -1,9 +1,10 @@
-#バージョン等
-・node@12.2.0<br />
-.nuxt@2.15.4<br />
-。express@4.17.1<br />
-
 # deathNote
+## バージョン
+.node@12.2.0<br />
+.nuxt@2.15.4<br />
+.express@4.17.1<br />
+.SQLite@3.28.0
+
 ## フロントエンド側サーバー起動方法
 frontendディレクトリで「yarn dev」を叩く
 
